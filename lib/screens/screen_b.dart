@@ -1,4 +1,4 @@
-import 'package:effect/routes.dart';
+import 'package:persistent_navigator/routes.dart';
 import 'package:flutter/material.dart';
 
 class ScreenB extends StatelessWidget {

@@ -1,4 +1,4 @@
-# effect
+# persistent_navigator
 
 A new Flutter project.
 

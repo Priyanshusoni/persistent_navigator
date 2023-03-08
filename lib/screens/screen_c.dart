@@ -1,5 +1,5 @@
-import 'package:effect/main.dart';
-import 'package:effect/screens/screen_new.dart';
+import 'package:persistent_navigator/main.dart';
+import 'package:persistent_navigator/screens/screen_new.dart';
 import 'package:flutter/material.dart';
 
 class ScreenC extends StatelessWidget {

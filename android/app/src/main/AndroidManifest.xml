@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.effect">
+    package="com.example.persistent_navigator">
    <application
-        android:label="effect"
+        android:label="persistent_navigator"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

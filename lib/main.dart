@@ -1,5 +1,5 @@
-import 'package:effect/routes.dart';
-import 'package:effect/custom_navigator.dart';
+import 'package:persistent_navigator/routes.dart';
+import 'package:persistent_navigator/custom_navigator.dart';
 import 'package:flutter/material.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();

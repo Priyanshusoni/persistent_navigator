@@ -1,9 +1,9 @@
-import 'package:effect/routes.dart';
-import 'package:effect/screens/screen_a.dart';
-import 'package:effect/screens/screen_a2.dart';
-import 'package:effect/screens/screen_b.dart';
-import 'package:effect/screens/screen_b2.dart';
-import 'package:effect/screens/screen_c.dart';
+import 'package:persistent_navigator/routes.dart';
+import 'package:persistent_navigator/screens/screen_a.dart';
+import 'package:persistent_navigator/screens/screen_a2.dart';
+import 'package:persistent_navigator/screens/screen_b.dart';
+import 'package:persistent_navigator/screens/screen_b2.dart';
+import 'package:persistent_navigator/screens/screen_c.dart';
 import 'package:flutter/material.dart';
 
 class CustomNavigator extends StatelessWidget {
