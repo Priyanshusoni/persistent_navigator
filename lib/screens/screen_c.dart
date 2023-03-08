@@ -1,4 +1,5 @@
 import 'package:persistent_navigator/main.dart';
+import 'package:persistent_navigator/routes.dart';
 import 'package:persistent_navigator/screens/screen_new.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +16,8 @@ class ScreenC extends StatelessWidget {
       body: Center(
         child: FilledButton(
           onPressed: () {
-            //to push new screen on top of navigation bar
-            Navigator.push(navigatorKey.currentContext!, MaterialPageRoute(builder: (context)=>const ScreenNew()));
+            // to push new screen on top of navigation bar
+            Navigator.pushNamed(navigatorKey.currentContext!, Routes.screenNew);
           },
           child: const Text('Go to New'),
         ),

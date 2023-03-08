@@ -29,6 +29,8 @@ class ScreenA extends StatelessWidget {
             const SizedBox(height: 20),
             FilledButton(
               onPressed: () {
+                // we can tab change instead of pushing screen
+                // tabManager.onTabChanged(1);
                 Navigator.pushNamed(
                   screenBKey.currentContext!,
                   Routes.screenB2,

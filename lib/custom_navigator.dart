@@ -1,3 +1,4 @@
+import 'package:persistent_navigator/main.dart';
 import 'package:persistent_navigator/routes.dart';
 import 'package:persistent_navigator/screens/screen_a.dart';
 import 'package:persistent_navigator/screens/screen_a2.dart';
@@ -9,12 +10,10 @@ import 'package:flutter/material.dart';
 class CustomNavigator extends StatelessWidget {
   final GlobalKey<NavigatorState> navigatorKey;
   final String currentScreenRoute;
-  final ValueChanged<int> changeTab;
   const CustomNavigator({
     super.key,
     required this.navigatorKey,
     required this.currentScreenRoute,
-    required this.changeTab,
   });
 
   @override
@@ -34,7 +33,7 @@ class CustomNavigator extends StatelessWidget {
             {
               final args = routeSetting.arguments as Map<String, dynamic>;
               //if we want to change tab before push screen call changeTab method
-              changeTab(0);
+              tabManager.onTabChanged(0);
               return MaterialPageRoute(
                 builder: (ctx) => ScreenA2(
                   //can pass argument to screens like this
@@ -43,7 +42,7 @@ class CustomNavigator extends StatelessWidget {
               );
             }
           case Routes.screenB2:
-            changeTab(1);
+            tabManager.onTabChanged(1);
             return MaterialPageRoute(builder: (ctx) => const ScreenB2());
           default:
             return MaterialPageRoute(builder: (ctx) => const ScreenA());
